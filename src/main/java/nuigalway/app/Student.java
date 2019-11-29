@@ -1,7 +1,7 @@
 package nuigalway.app;
 
 import java.util.ArrayList;
-import org.joda.time.DateTime;;
+import org.joda.time.DateTime;
 
 public class Student {
 	private String name;
