@@ -2,6 +2,7 @@ package nuigalway.app;
 
 import java.util.ArrayList;
 import org.joda.time.DateTime;
+import org.joda.time.Period;
 
 public class Student {
 	private String name;
@@ -12,9 +13,10 @@ public class Student {
 	private ArrayList<Course> regCourses;
 	private ArrayList<Module> regMods;
 	
-	public Student(String name, Integer age, DateTime DOB, long ID, ArrayList<Course> regCourses, ArrayList<Module> regMods) {
+	public Student(String name, DateTime DOB, long ID, ArrayList<Course> regCourses, ArrayList<Module> regMods) {
 		this.name = name;
-		this.age = age;
+		Period period = new Period(DOB, DateTime.now());
+		this.age = period.getYears();
 		this.DOB = DOB;
 		this.ID = ID;
 		this.regCourses = regCourses;
