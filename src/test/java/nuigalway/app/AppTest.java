@@ -69,7 +69,7 @@ public class AppTest
     	for(Course c : courses) {
     		ArrayList<Student> studs = c.getEnrolStuds();
     		for(Student s : studs) {
-    			if(!(s.getUsername().equals("Thomas Deegan21") || s.getUsername().equals("John Smith20") || s.getUsername().equals("Stephanie Kenny23") || s.getUsername().equals("Alex Jones22"))) {
+    			if(!(s.getUsername().equals("ThomasDeegan21") || s.getUsername().equals("JohnSmith20") || s.getUsername().equals("StephanieKenny23") || s.getUsername().equals("AlexJones22"))) {
     				failed = true;
     				System.out.println(s.getUsername());
     			}

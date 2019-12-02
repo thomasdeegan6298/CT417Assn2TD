@@ -77,7 +77,8 @@ public class Student {
 	}
 
 	public String setUsername(String ainm, Integer aois) {
-		String uName = ainm+aois.toString();
+		String[] ainmeacha = ainm.split("\\s+");
+		String uName = ainmeacha[0]+ainmeacha[1]+aois.toString();
 		return uName;
 	}
 }
